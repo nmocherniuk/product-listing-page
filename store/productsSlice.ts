@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
+import { setProducts } from "./productFilterSlice";
 import { Product } from "@/types";
 
 // Asynchronous thunk for fetching products
@@ -9,6 +10,7 @@ export const fetchProducts = createAsyncThunk(
     const url = process.env.NEXT_PUBLIC_PRODUCTS_URL;
     if (!url) throw new Error("Url data is not defined");
     const response = await axios.get(url);
+    dispatch(setProducts(response.data));
     return response.data;
   },
 );

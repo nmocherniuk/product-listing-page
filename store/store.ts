@@ -1,12 +1,14 @@
 "use client";
 
 import { configureStore } from "@reduxjs/toolkit";
+import productFilterReducer from "./productFilterSlice";
 import productsReducer from "./productsSlice";
 
 // Configure the Redux store
 const store = configureStore({
   reducer: {
     products: productsReducer,
+    productFilter: productFilterReducer,
   },
 });
 
