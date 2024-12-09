@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "image": "https://orisdi.com/cdn/shop/files/Untitleddesign_2ff8ea41-26b3-41db-8801-048ee3a06341_800x.jpg",
+    "price": 59.99,
+    "category": "Electronics",
+    "description": "High-quality wireless Bluetooth headphones with noise-cancellation and 20 hours of battery life."
+  },
+  {
+    "id": 2,
+    "name": "Eco-Friendly Water Bottle",
+    "image": "https://www.everich.com/wp-content/uploads/2020/09/eco-friendly-water-bottles-1-1.jpg",
+    "price": 19.99,
+    "category": "Home & Kitchen",
+    "description": "Durable and reusable water bottle made from eco-friendly materials. BPA-free and easy to carry."
+  },
+  {
+    "id": 3,
+    "name": "Smart LED Desk Lamp",
+    "image": "https://content.rozetka.com.ua/goods/images/big/483982985.jpg",
+    "price": 39.99,
+    "category": "Office Supplies",
+    "description": "Smart desk lamp with adjustable brightness, color temperature settings, and USB charging port."
+  },
+  {
+    "id": 4,
+    "name": "Men's Running Shoes",
+    "image": "https://m.media-amazon.com/images/I/71KNWunXvTS._AC_UY900_.jpg",
+    "price": 89.99,
+    "category": "Sportswear",
+    "description": "Lightweight and comfortable running shoes with superior cushioning and durable soles."
+  },
+  {
+    "id": 5,
+    "name": "Ceramic Coffee Mug",
+    "image": "https://m.media-amazon.com/images/I/61XiRRGa14L.jpg",
+    "price": 12.99,
+    "category": "Kitchenware",
+    "description": "Stylish ceramic coffee mug with 350ml capacity, perfect for your morning coffee or tea."
+  },
+  {
+    "id": 6,
+    "name": "Wireless Keyboard and Mouse Combo",
+    "image": "https://m.media-amazon.com/images/I/71xeLB8ZzBS.jpg",
+    "price": 45.99,
+    "category": "Computers & Accessories",
+    "description": "Compact and lightweight wireless keyboard and mouse set with long battery life and ergonomic design."
+  },
+  {
+    "id": 7,
+    "name": "Kids' Educational Puzzle Set",
+    "image": "https://m.media-amazon.com/images/I/71Cf5nhDD9L._AC_UF894,1000_QL80_.jpg",
+    "price": 24.99,
+    "category": "Toys & Games",
+    "description": "Fun and educational puzzle set designed for kids aged 4-10. Enhances problem-solving skills."
+  },
+  {
+    "id": 8,
+    "name": "Portable Power Bank 10000mAh",
+    "image": "https://m.media-amazon.com/images/I/61Vnm8O7EgL.jpg",
+    "price": 29.99,
+    "category": "Electronics",
+    "description": "Compact and lightweight power bank with 10000mAh capacity. Supports fast charging for multiple devices."
+  },
+  {
+    "id": 9,
+    "name": "Luxury Scented Candle",
+    "image": "https://30316cca.rocketcdn.me/wp-content/uploads/2021/05/Winter-Rose-Candle.jpg",
+    "price": 15.99,
+    "category": "Home Decor",
+    "description": "Hand-poured scented candle with a calming lavender aroma. Burns for up to 40 hours."
+  },
+  {
+    "id": 10,
+    "name": "Adjustable Laptop Stand",
+    "image": "https://vest.in.ua/image/cache/catalog/kosmotech/3/595999521-pidstavka-dlya-noutbuka-ugreen-lp339-adjustable-laptop-stand-silverugr-40291-06ugr-40291-sn-1000x1000.jpg",
+    "price": 34.99,
+    "category": "Office Supplies",
+    "description": "Ergonomic laptop stand with adjustable height and angle. Supports laptops up to 15.6 inches."
+  }
+]
