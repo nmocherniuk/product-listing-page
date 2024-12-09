@@ -3,10 +3,11 @@
 import React, { FC, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/store/store";
-import { Product } from "@/types";
-import Pagination from "@/components/Pagination/Pagination";
 import ProductItem from "@/components/ProductItem/ProductItem";
+import Pagination from "@/components/Pagination/Pagination";
 import { fetchProducts } from "@/store/productsSlice";
+import FilterActionsPanel from "@/components/FilterActionsPanel/FilterActionsPanel";
+import { Product } from "@/types";
 
 const Products: FC = () => {
   const [paginatedProducts, setPaginatedProducts] = useState<Product[]>([]);
@@ -17,6 +18,10 @@ const Products: FC = () => {
   // Select data from Redux store
   const { products, loading, error } = useSelector(
     (state: RootState) => state.products,
+  );
+
+  const { filteredProducts } = useSelector(
+    (state: RootState) => state.productFilter,
   );
 
   // Fetch products if not already fetched
@@ -31,10 +36,10 @@ const Products: FC = () => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 
-    setPaginatedProducts(products.slice(startIndex, endIndex));
-  }, [products, currentPage]);
+    setPaginatedProducts(filteredProducts.slice(startIndex, endIndex));
+  }, [filteredProducts, currentPage]);
 
-  let content = null;
+  let content;
 
   // Render loading state
   if (loading) {
@@ -62,7 +67,7 @@ const Products: FC = () => {
           ))}
         </article>
         <Pagination
-          totalItems={products.length}
+          totalItems={filteredProducts.length}
           itemsPerPage={itemsPerPage}
           currentPage={currentPage}
           onPageChange={setCurrentPage}
@@ -76,6 +81,7 @@ const Products: FC = () => {
       <h2 className="mb-8 text-center text-[26px] font-medium text-black sm:text-[28px] lg:text-[34px]">
         Products List
       </h2>
+      <FilterActionsPanel />
       {content}
     </section>
   );

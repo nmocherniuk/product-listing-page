@@ -7,3 +7,9 @@ export interface Product {
   category: string;
   description: string;
 }
+
+// Interface for a price range
+export interface PriceRange {
+  min: number | null;
+  max: number | null;
+}
