@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Providers from "@/components/Providers/Providers";
 
 export const metadata: Metadata = {
   title: "Product Listing Page",
@@ -19,7 +20,7 @@ export default function RootLayout({
         <Header />
         <div className="flex h-full w-full flex-grow py-[52px]">
           <main className="mx-auto w-full max-w-[1300px] px-5 sm:px-10 md:px-14 lg:px-20">
-            {children}
+            <Providers>{children}</Providers>
           </main>
         </div>
       </body>
